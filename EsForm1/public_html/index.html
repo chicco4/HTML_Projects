@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>EsForm1</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet" type="text/css">	
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <form name="myForm" method="post" onSubmit="return validateForm();">
+            <fieldset>
+                <legend>Form</legend>
+                <div>
+                    <label for="cognome">Cognome:</label>
+                    <input type="text" id="cognome" name="cognome" autocomplete="off" size="40" maxlength="40">
+                </div>
+                <div>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" autocomplete="off" size="30" maxlength="30">
+                </div>
+                <div>
+                    <label for="matricola">Matricola:</label>
+                    <input type="text" id="matricola" name="matricola" autocomplete="off" size="12" maxlength="12">
+                </div>
+                <div>
+                    <label for="regione">Regione:</label>
+                    <select id="regione" name="regione">
+                        <option disabled selected value="defaultOption"></option>
+                        <option value="Piemonte">Piemonte</option>
+                        <option value="Valle d'Aosta">Valle d'Aosta</option>
+                        <option value="Lombardia">Lombardia</option>
+                        <option value="Trentino-Alto Adige">Trentino-Alto Adige</option>
+                        <option value="Veneto">Veneto</option>
+                        <option value="Friuli-Venezia Giulia">Friuli-Venezia Giulia</option>
+                        <option value="Liguria">Liguria</option>
+                        <option value="Emilia-Romagna">Emilia-Romagna</option>
+                        <option value="Toscana">Toscana</option>
+                        <option value="Umbria">Umbria</option>
+                        <option value="Marche">Marche</option>
+                        <option value="Lazio">Lazio</option>
+                        <option value="Abruzzo">Abruzzo</option>
+                        <option value="Molise">Molise</option>
+                        <option value="Campania">Campania</option>
+                        <option value="Puglia">Puglia</option>
+                        <option value="Basilicata">Basilicata</option>
+                        <option value="Calabria">Calabria</option>
+                        <option value="Sicilia">Sicilia</option>
+                        <option value="Sardegna">Sardegna</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email" autocomplete="off" size="30" maxlength="30">
+                </div>
+                <div>
+                    <label for="telefono">Telefono:</label>
+                    <input type="text" id="telefono" name="telefono" autocomplete="off" size="15" maxlength="15">
+                </div>
+                <div>
+                    <label for="richieste">Richieste:</label>
+                    <textarea id="richieste" name="richieste" rows="12" cols="60"></textarea>
+                </div>
+                <div>
+                    <input type="submit" id="invia" name="invia">
+                    <input type="reset" id="reset" name="reset">
+                </div>
+            </fieldset>
+        </form>
+    </body>
+</html>
