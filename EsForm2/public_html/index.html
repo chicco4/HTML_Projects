@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html> 
+    <head>
+        <title>EsForm2</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet" type="text/css">	
+        <script src="script.js"></script>
+    </head>
+    <body> 
+        <form action="" method="post" name="eseform" onSubmit="return validaInvio();"> 
+            <fieldset>
+                <legend>Form</legend>
+                <div>
+                    <label for="cognome&nome">cognome e nome:</label>
+                    <input type="text" name="nome" size="50" maxlength="50"  autocomplete="off" onChange="return controllaNome();">
+                </div>
+                <div>
+                    <label for="sesso">sesso:</label>
+                    <input type="radio" name="sesso" value="M" checked>M
+                    <input type="radio" name="sesso" value="F">F 
+                </div>
+                <div>
+                    <label for="ateneo">ateneo:</label>
+                    <select name="ateneo">
+                        <option selected value="nessuno"></option>
+                        <option value="sapienza">La Sapienza</option> 
+                        <option value="torvergata">Tor Vergata</option> 
+                        <option value="romatre">Roma Tre</option> 
+                    </select> 
+                </div>
+                <div>
+                    <label for="cap">CAP:</label>
+                    <input type="text" name="cap" size="5"   autocomplete="off" maxlength="5" onChange="return controllaCAP();"> 
+                </div>
+                <div>
+                    <label for="lavoratore">sono uno studente lavoratore</label>
+                    <input type="checkbox" name="lavoratore"> 
+                </div>
+                <div>
+                    <label for="lavoro">descrizione lavoro:</label>
+                    <input type="text" name="descr" size="80"   autocomplete="off" maxlength="80"> 
+                </div>
+                <div>
+                    <input type="submit" value="Invia"> 
+                    <input type="reset" value="Reset"> 
+                </div>
+            </fieldset> 
+        </form> 
+    </body> 
+</html>
